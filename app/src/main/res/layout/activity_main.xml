@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeLayout">
+
+    <ImageView
+        android:id="@+id/hammer"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/hammer" />
+
+    <ImageView
+        android:id="@+id/moleImageView"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:src="@drawable/mole"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/cave1"
+        style="@style/hole"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/cave" />
+    <ImageView
+        android:id="@+id/cave5"
+        style="@style/hole"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/cave" />
+
+    <ImageView
+        android:id="@+id/cave6"
+        style="@style/hole"
+        android:layout_toEndOf="@id/cave1"
+        android:layout_toStartOf="@id/cave5"
+        android:layout_centerVertical="true"
+        android:src="@drawable/cave" />
+    <ImageView
+        android:id="@+id/cave2"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="false"
+        android:layout_below="@id/cave1"
+        android:src="@drawable/cave" />
+    <ImageView
+        android:id="@+id/cave3"
+        style="@style/hole"
+        android:layout_centerVertical="false"
+        android:layout_toEndOf="@id/cave2"
+        android:layout_below="@id/cave1"
+        android:src="@drawable/cave" />
+
+    <ImageView
+        android:id="@+id/cave4"
+        style="@style/hole"
+        android:layout_centerVertical="false"
+        android:layout_toEndOf="@id/cave3"
+        android:layout_below="@id/cave1"
+        android:src="@drawable/cave" />
+
+    <ImageView
+        android:id="@+id/cave7"
+        style="@style/hole"
+        android:layout_centerVertical="false"
+        android:layout_below="@id/cave4"
+        android:src="@drawable/cave" />
+    <ImageView
+        android:id="@+id/cave8"
+        style="@style/hole"
+        android:layout_centerVertical="false"
+        android:layout_toEndOf="@id/cave2"
+        android:layout_below="@id/cave3"
+        android:src="@drawable/cave" />
+
+    <ImageView
+        android:id="@+id/cave9"
+        style="@style/hole"
+        android:layout_centerVertical="false"
+        android:layout_toEndOf="@id/cave8"
+        android:layout_below="@id/cave3"
+        android:src="@drawable/cave" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        style="@style/gameplayText"
+        android:text="@string/score_0"
+        android:textSize="30sp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/gameplayText"
+        android:text="@string/time_0"
+        android:textSize="30sp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/target"
+        style="@style/gameplayText"
+        android:text="@string/target_10"
+        android:textSize="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/scoreTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"/>
+
+</RelativeLayout>

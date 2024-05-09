@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="hole">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+    <style name="gameplayText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/comics_deluxe</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

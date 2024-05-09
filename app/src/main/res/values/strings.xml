@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Whack-a-Mole</string>
+    <string name="score_0">Score: 0</string>
+    <string name="result">RESULT</string>
+    <string name="start">Start</string>
+    <string name="time_0">Timer: 0</string>
+    <string name="retry">Retry</string>
+    <string name="home">Home</string>
+    <string name="score">Score:</string>
+    <string name="highest_score">Highest Score:</string>
+    <string name="target_10">Target: 10</string>
+</resources>
